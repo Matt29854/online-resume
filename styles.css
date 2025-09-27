@@ -1,0 +1,250 @@
+.burger{
+    filter: invert(100%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    position: fixed;
+    left: 1%;
+    max-height: 70px;
+    display: none;
+
+}
+
+footer{
+    bottom: 0;
+    padding: 5%;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: teal;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+footer img{
+    max-height: 50px;
+}
+
+body{
+    padding-bottom: 5%;
+}
+
+nav{
+    font-weight: 400;
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    width: fit-content;
+}
+
+h1{
+    text-align: left;
+    padding-left: 15%;
+}
+
+header p{
+    padding-left: 10%;
+}
+
+button{
+    background-color: teal;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer; 
+    color: white;  
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border: none;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #e2e8ee; 
+    color: teal;
+}
+
+.buttons1{
+    padding-left: 15%;
+}
+
+.grey-bcg{
+    background-color: gray;
+}
+
+.flex{
+    display: flex;
+}
+
+.logo{
+    width: 60px;
+    margin-right: 7%;
+}
+
+.top-margin{
+    margin-top: 50px;
+}
+
+.space{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.bodyColor{
+    background-color: rgb(12, 15, 19);
+}
+
+.tech-carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+}
+
+.tech {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    display: inline-block;
+}
+
+.tech img {
+    width: 50px;
+    margin: 0 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+@media (max-width: 500px){
+    .burger{
+        top: 80px;
+    }
+}
+
+.skills img{
+    max-height: 50px;
+}
+
+.jscript {
+    flex-wrap: wrap;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.holographic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: rgb(12, 15, 19);
+}
+
+.holographic-card {
+    height: 200px;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.holographic-card h2 {
+    color: rgb(159, 208, 236);
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.holographic-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+    );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.holographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+@media (max-width: 800px){
+
+    body{
+    padding-top: 1%;
+    }
+
+    .pp{
+    max-height: 300px;
+    max-width: 300px !important;
+    }
+
+    .holographic-card {
+    width: 200px;}
+}
+
+@media (min-width: 800px){
+
+    body{
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 1%;
+    }
+
+    nav{
+    float: right;
+    }
+
+    .holographic-card {
+    width: 300px;}
+
+}

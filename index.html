@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineResume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bodyColor">
+
+    <div class="menuBurger">
+        <img src="img/svg/burger-menu-svgrepo-com.svg" alt="" class="responsive-img burger">
+    </div>
+
+    <header>
+        <div class="flex navig">
+            <img src="img/output-onlinepngtools.png" alt="" class="responsive-img left logo">
+            <nav class="teal">
+                <ul class="blue-text bold left right">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Project">Projects</a></li>
+                    <li class="right"><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row wrap space">
+            <div class="col s12 m6 l8">
+                <h1 class="white-text flow-text">Hey, I'm Mathys,<br>
+                    A Front-end <span class="grey-text"> &#60/Developer&#62 </span></h1>
+                    <p class="white-text">I'm a student of Epitech, I'm passionate about making things look good
+                        , developing solutions for businesses and I am looking for an internship in Front-end Design.
+                    </p>
+            </div>
+            <img src="img/CercleTeal.png" alt="" class="responsive-img pp col s12 m6 l4">
+        </div>
+    </header>
+
+    <section class="buttons1 space">
+        <a href="/skills.html" class="white-text"><button>Skills</button></a>
+        <a href="#Project" class="white-text"><button>Projects</button></a>
+    </section>
+
+    <section class="space flex techno">
+        <div class="tech-carousel">
+            <div class="tech">
+                <a href="/skills.html"><img src="img/svg/css-3-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/html-5-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/javascript-logo-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/Tailwind_CSS_Logo.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/python-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/php-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/sql-database-sql-azure-svgrepo-com.svg" alt=""></a>
+            </div>
+
+           <div class="tech">
+                <a href="/skills.html"><img src="img/svg/css-3-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/html-5-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/javascript-logo-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/Tailwind_CSS_Logo.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/python-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/php-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/sql-database-sql-azure-svgrepo-com.svg" alt=""></a>
+            </div> 
+
+            <div class="tech">
+                <a href="/skills.html"><img src="img/svg/css-3-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/html-5-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/javascript-logo-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/Tailwind_CSS_Logo.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/python-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/php-svgrepo-com.svg" alt=""></a>
+                <a href="/skills.html"><img src="img/svg/sql-database-sql-azure-svgrepo-com.svg" alt=""></a>
+            </div> 
+        </div>
+    </section>
+
+    <section class="projects" id="Project">
+        <div class="card-panel teal">
+            <h2 class="white-text flow-text space">My projects</h2>
+            <div class="row">
+                <p class="white-text col s12 m4">Sierpinski triangle in python: <br> Using trigonometry and recursion, this program draws a triangle fractal</p>
+                <img src="img/Triangle.png" alt="" class="responsive-img col s12 m8">
+            </div>
+        </div>
+    </section>
+
+    <section class="About space" id="About">
+        <h3 class="white-text">About</h3>
+        <p class="white-text">Afeter graduating a design school, I decide to join Epitech, so that I can combine my love for aesthetic apps and programming dynamic solutions. <br> In my spare time, I play guitar, teach guitar and I love myself a game of chess, if you want to challenge me, go to my <a href="https://www.chess.com/member/oktogaunt">chess.com</a></p>
+        <div class="row">
+            <h4 class="white-text"></h4>
+        </div>
+        
+        <div class="video-container">
+            <iframe width="853" height="480" src="https://www.youtube.com/watch?v=31LyfMh_Co8" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer class="page-footer teal" id="Contact">
+        <div>
+            <div class="container">
+                <h2 class="black-text">Contact me!</h2>
+
+                <form action="mailto:mathys.toux@epitech.eu">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div> 
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
